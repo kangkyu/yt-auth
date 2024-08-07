@@ -5,7 +5,7 @@ describe 'Yt::Auth.url_for' do
     url = Yt::Auth.url_for redirect_uri: 'http://example.com'
 
     it 'returns a link to Google authentication flow' do
-      expect(url).to start_with 'https://accounts.google.com/o/oauth2/auth'
+      expect(url).to start_with 'https://accounts.google.com/o/oauth2/v2/auth'
     end
 
     it 'includes the redirect URI' do

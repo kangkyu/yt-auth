@@ -27,7 +27,7 @@ application:
 redirect_uri = 'https://example.com/auth' # REPLACE WITH REAL ONE
 scope = %i(yt-analytics.readonly youtube)
 Yt::Auth.url_for(redirect_uri: redirect_uri, scope: scope, force: true)
- # => https://accounts.google.com/o/oauth2/auth?client_id=...&scope=email&redirect_uri=https%3A%2F%2Fexample.com%2Fauth&response_type=code
+ # => https://accounts.google.com/o/oauth2/v2/auth?client_id=...&scope=email&redirect_uri=https%3A%2F%2Fexample.com%2Fauth&response_type=code
 ```
 
 Yt::Auth.create

@@ -34,7 +34,7 @@ module Yt
     #   are requested to authorize.
     def self.url_for(options = {})
       host = 'accounts.google.com'
-      path = '/o/oauth2/auth'
+      path = '/o/oauth2/v2/auth'
       query = URI.encode_www_form url_params(options)
       URI::HTTPS.build(host: host, path: path, query: query).to_s
     end

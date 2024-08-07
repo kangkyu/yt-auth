@@ -17,4 +17,5 @@ require 'yt/auth'
 Yt.configure do |config|
   config.client_id = ENV['YT_ACCOUNT_CLIENT_ID']
   config.client_secret = ENV['YT_ACCOUNT_CLIENT_SECRET']
+  config.log_level = :devel
 end
